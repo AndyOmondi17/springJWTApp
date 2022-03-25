@@ -18,32 +18,17 @@
 
 ## ScreenShots
 - Login to get the access and refresh token.
-
       <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/login.png"/>
    
    - Unauthorized access to an endpoint.
-
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/notAdmin.png" />
-   
-   - Using the Refresh token to get another access token.
-
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/refreshtoken.png" />
- 
+      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/forbidden.png"/>
+  
    - Getting all the staff in the database.
-
       <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/getallstaff.png" />
    
-   - Adding users to the database, You need to have the admin role.
-       
-       ```java
-        http.authorizeRequests().antMatchers("/api/staff/save").hasAnyAuthority("ROLE_ADMIN")
-       ```
-   
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/addMember.png" />
+   - Queryingjpa many to many.   
+      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/queryjpamanytomany.png"/>
 
-   - User already exists in the database.
-    
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/useralredyExists.png"/>
 
 
        
