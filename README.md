@@ -20,10 +20,6 @@
 - Login to get the access and refresh token.
 
       <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/login.png"/>
-      
-   - When you login using bad credentials.
-
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/badcredentials.png" />
    
    - Unauthorized access to an endpoint.
 
@@ -33,14 +29,14 @@
 
       <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/refreshtoken.png" />
  
-   - Getting all the users in the database.
+   - Getting all the staff in the database.
 
-      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/allusers.png" />
+      <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/getallstaff.png" />
    
    - Adding users to the database, You need to have the admin role.
        
        ```java
-        http.authorizeRequests().antMatchers("/api/user/save").hasAnyAuthority("ROLE_ADMIN")
+        http.authorizeRequests().antMatchers("/api/staff/save").hasAnyAuthority("ROLE_ADMIN")
        ```
    
       <img src="https://github.com/AndyOmondi17/springJWTApp/blob/main/assets/addMember.png" />
